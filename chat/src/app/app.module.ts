@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChatRoomComponent } from './chat-room/chat-room.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChatRoomComponent
+    ChatRoomComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
