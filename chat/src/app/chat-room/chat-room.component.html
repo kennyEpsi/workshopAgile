@@ -1,9 +1,21 @@
-<p>
-  chat-room works!
-</p>
-<div>
-  <input type="text" id="input" name="name" minlength="4" maxlength="8" size="10">
-  <button type="submit" (click)="replaceWord()">click me</button>
-
+<div class="container-fluid h-vh-100">
+    <div disabled class="pos-top-center border bd-dark border-double border-size-5"
+        style="width:60%; height: 90%;overflow-y:scroll">
+        <table class="table striped">
+            <tbody>
+                <tr *ngFor="let msg of msgs">
+                    <td>{{msg}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="row pos-fixed pos-bottom-center" style="width:55%; height: 5%; margin-bottom: 10px">
+        <input type="text" placeholder="message..." [(ngModel)]="message" class="cell cell-10 rounded success outline"
+            style="height: 100%" (keyup)="onKey($event)">
+        <button class="mif-chat mif-3x cell cell-2 button success rounded" (click)="sendMessage(message)"
+            style="height: 100%">
+            <span class=""></span>
+        </button>
+    </div>
 </div>
 <router-outlet></router-outlet>

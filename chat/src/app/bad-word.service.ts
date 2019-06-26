@@ -1,3 +1,4 @@
+declare var require: any
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -13,7 +14,6 @@ export class BadWordService {
   replaceWord(word) {
     this.leoProfanity.clearList();
     this.leoProfanity.add(this.frenchBadwordsList.array);
-
-    console.log(this.leoProfanity.clean(word));
+    return this.leoProfanity.clean(word);
   }
 }

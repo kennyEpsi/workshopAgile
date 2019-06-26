@@ -25,3 +25,22 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
+##Lien utile 
+https://metroui.org.ua/chat.html
+https://github.com/olton/Metro-UI-CSS/blob/76b35aed1705ff5661d4a0a43c5a4431f1dd46b2/docs/chat.html
+
+https://tutorialedge.net/typescript/angular/angular-socket-io-tutorial/
+https://tutorialedge.net/typescript/angular/angular-websockets-tutorial/
+
+
+Run angular APP
+D:\workspace_workshop_agile\chat> ng serve --open (port 4200)
+
+Run server express
+D:\workspace_workshop_agile\chat\src\app> node app.js (port 4300)
+
+
+https://socket.io/get-started/chat/

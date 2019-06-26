@@ -1,3 +1,21 @@
-<p>
-  login works!
-</p>
+<div class="container-fluid h-vh-100">
+  <form [formGroup]="connexionForm" (ngSubmit)="connexion()" class="login-form bg-white p-6 mx-auto border bd-default win-shadow" data-role="validator"
+    data-clear-invalid="500" >
+    <span class="mif-vpn-lock mif-4x place-right" style="margin-top: -10px;"></span>
+    <h2 class="text-light">Login to Chat</h2>
+    <hr class="thin mt-4 mb-4 bg-white">
+    <div class="form-group">
+      <input type="text" data-role="input" data-prepend="<span class='mif-envelop'>" placeholder="Email"
+        data-validate="required email" formControlName="username">
+    </div>
+    <div class="form-group">
+      <input type="password" data-role="input" data-prepend="<span class='mif-key'>" placeholder="Mot de passe"
+        data-validate="required minlength=6" formControlName="password">
+    </div>
+    <div class="form-group mt-10">
+      <button class="button">Connexion</button>
+      <button class="button place-right">Inscription</button>
+    </div>
+  </form>
+</div>
+<router-outlet></router-outlet>
